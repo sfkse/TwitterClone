@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
-import { TopTweetIcon, PrivacyIcon, PollIcon, ImageIcon, GifIcon } from '../assets/icon';
+import { TopTweetIcon, PrivacyIcon, PollIcon, ImageIcon, GifIcon, Link, Like } from '../assets/icon';
 
 const Main = () => {
     return (
@@ -32,10 +32,12 @@ const Main = () => {
                 </div>
 
             </div>
-            <div>
-                <GifIcon />
-                <ImageIcon />
-                <PollIcon />
+            <div className="flex">
+                <GifIcon color="#1D9BF2" />
+                <ImageIcon color="#1D9BF2" />
+                <PollIcon color="#1D9BF2" />
+                <Link color="#1D9BF2" />
+                <Like color="#1D9BF2" />
             </div>
             <div>
 
