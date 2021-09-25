@@ -1,6 +1,6 @@
 import { LIST_TWEET, POST_TWEET, LIKE_TWEET, RE_TWEET } from '../types/types';
 
-export const listTWeet = () => {
+export const listTweet = () => {
     return ({
         type: LIST_TWEET
     })

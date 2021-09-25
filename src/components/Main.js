@@ -1,21 +1,23 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react';
 import { TopTweetIcon, PrivacyIcon, tweetEmoji } from '../assets/icon';
+import Tweets from './Tweets';
 
-const Main = () => {
+
+const Main = (props) => {
+
+
     return (
-        <div className="w-6/12 border-l-2">
-            <div className="flex justify-between my-4">
+        <div className="w-6/12 border-l-2 border-gray-50">
+            <div className="flex justify-between  m-4">
                 <h1 className="text-xl font-bold">Home</h1>
                 <TopTweetIcon className="" />
             </div>
-            <div className="flex border-b-2  border-t-2 p-3">
+            <div className="flex border-b-2 border-gray-50 border-t-2 p-3">
                 <div className="flex rounded-full">
                     <img
                         className="inline object-cover w-12 h-12 mr-2 rounded-full"
                         src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                        alt="Profile image"
-                    />
+                        alt="Profile image" />
                 </div>
                 <div className="flex flex-col flex-1 justify-around">
                     <input className="p-4 outline-none w-full text-lg placeholder-grey-900" placeholder="What's happening?"
@@ -24,7 +26,7 @@ const Main = () => {
                         <PrivacyIcon width="15" height="15" color="#1D9BF2" />
                         <span className="ml-1 text-sm font-bold">Everyone can reply</span>
                     </a>
-                    <div className="flex justify-between border-t-2 pt-2 ml-5">
+                    <div className="flex justify-between border-t-2 border-gray-50 pt-2 ml-5">
                         <ul className="flex gap-3 ">
                             {tweetEmoji.map(emj =>
                                 <TweetIcon Icon={emj.icon} name={emj.name} />
@@ -34,16 +36,11 @@ const Main = () => {
                             <span > Tweet</span>
                         </button>
                     </div>
-
-
                 </div>
-
-
             </div>
-            <div>
-                {/* <Tweets> */}
+            <div className="flex border-b-2 border-gray-50 p-3">
+                <Tweets listTweet={props.listTWeet} tweets={props.tweets} />
             </div>
-
         </div>
     )
 }
@@ -60,4 +57,4 @@ const TweetIcon = ({ Icon, name }) => {
     )
 }
 
-export default Main
+export default (Main)

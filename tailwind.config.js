@@ -8,11 +8,17 @@ module.exports = {
         current: "currentColor",
         blue: {
           light: "rgb(29, 155, 240)",
-          dark: "rgb(26,140,216)"
+          dark: "rgb(26,140,216)",
+          iconHover: "rgb(225, 238, 246)"
+        },
+        green: {
+          iconHover: "rgb(222, 241, 235)",
+        },
+        red: {
+          iconHover: "rgb(247, 224, 235)",
         },
         gray: {
           hover: "#E5E7EB",
-          hoverLight: "#E8F5FD"
         }
       }
     },

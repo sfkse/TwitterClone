@@ -8,7 +8,6 @@ const Menu = () => {
             <TwitterIcon width="140" height="40" color="#1da1f2" className="w-8 my-5 " />
             <ul className=" mt-5">
                 {menuLinks.map(link => {
-                    console.log(link);
                     return (<MenuLinks Icon={link.icon} name={link.name} />)
                 })}
             </ul>
