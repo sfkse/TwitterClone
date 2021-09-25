@@ -1,8 +1,10 @@
 import { LIST_TWEET, POST_TWEET, LIKE_TWEET, RE_TWEET } from '../types/types';
+import { Tweets } from '../../tweetsdb';
 
 export const listTweet = () => {
     return ({
-        type: LIST_TWEET
+        type: LIST_TWEET,
+        payload: Tweets
     })
 }
 

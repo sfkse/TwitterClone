@@ -5,7 +5,7 @@ import Tweets from './Tweets';
 
 const Main = (props) => {
 
-
+    console.log(props)
     return (
         <div className="w-6/12 border-l-2 border-gray-50">
             <div className="flex justify-between  m-4">
@@ -32,14 +32,15 @@ const Main = (props) => {
                                 <TweetIcon Icon={emj.icon} name={emj.name} />
                             )}
                         </ul>
-                        <button className="text-white bg-blue-light hover:bg-blue-dark font-medium px-5 rounded-full" >
+                        <button className="text-white bg-blue-light hover:bg-blue-dark font-sm px-5 rounded-full" >
                             <span > Tweet</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div className="flex border-b-2 border-gray-50 p-3">
-                <Tweets listTweet={props.listTWeet} tweets={props.tweets} />
+            <div >
+                {props.tweets.tweets.map(tw => <Tweets listTweet={props.listTWeet} tweets={tw} />)}
+
             </div>
         </div>
     )

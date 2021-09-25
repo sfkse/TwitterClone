@@ -4,7 +4,7 @@ import { tweetBoxIcons, Attach } from '../assets/icon';
 const Tweets = ({ tweets, listTweet }) => {
 
     return (
-        <>
+        <div className="flex border-b-2 border-gray-50 p-3">
             <div className="flex rounded-full">
                 <img
                     className="inline object-cover w-12 h-12 mr-2 rounded-full"
@@ -25,7 +25,7 @@ const Tweets = ({ tweets, listTweet }) => {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 
