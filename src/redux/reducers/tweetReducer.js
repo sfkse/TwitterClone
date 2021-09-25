@@ -1,5 +1,4 @@
-import { LIST_TWEET, POST_TWEET, LIKE_TWEET, RE_TWEET } from '../types/types';
-import { Tweets } from '../../tweetsdb';
+import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET } from '../types/types';
 
 const initialState = {
     errmess: null,
@@ -9,11 +8,11 @@ const initialState = {
 export const tweetReducer = (state = initialState, action) => {
     switch (action.type) {
         case LIST_TWEET:
-            console.log(action.payload)
+
             return { ...state, tweets: action.payload };
 
-        case POST_TWEET:
-            return { ...state, tweets: action.payload };
+        case ADD_TWEET:
+            return { ...state, tweets: state.tweets.concat(action.payload) };
 
         case LIKE_TWEET:
             return { ...state, tweets: action.payload };
@@ -22,7 +21,6 @@ export const tweetReducer = (state = initialState, action) => {
             return { ...state, tweets: action.payload };
 
         default:
-            console.log(state)
             return state
     }
 }

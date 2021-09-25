@@ -1,14 +1,16 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import { tweetBoxIcons, Attach } from '../assets/icon';
 
-const Tweets = ({ tweets, listTweet }) => {
+const Tweets = ({ tweets, logo }) => {
 
     return (
         <div className="flex border-b-2 border-gray-50 p-3">
             <div className="flex rounded-full">
                 <img
                     className="inline object-cover w-12 h-12 mr-2 rounded-full"
-                    src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    src={logo}
                     alt="Profile image" />
             </div>
             <div className="flex-col flex-1 justify-start">

@@ -4,28 +4,32 @@ import Feed from './components/Feed';
 import Main from './components/Main';
 import Menu from './components/Menu';
 import { connect } from 'react-redux';
-import { listTweet, postTWeet } from './redux/actions/actions';
+import { fetchTweets, postTweet } from './redux/actions/actions';
 
 const mapStateToProps = (state) => ({
   tweets: state.tweet
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  listTweet: () => dispatch(listTweet()),
-  postTweet: (author, username, content) => dispatch(postTWeet())
+  fetchTweets: () => dispatch(fetchTweets()),
+  postTweet: (content) => dispatch(postTweet(content))
 })
 
 const App = (props) => {
 
   useEffect(() => {
-    props.listTweet()
+    props.fetchTweets()
   }, [])
 
   return (
 
     <div className="flex container max-w-6xl mx-auto ">
       <Menu />
-      <Main tweets={props.tweets} listTweet={props.listTweet} />
+      <Main
+        tweets={props.tweets}
+        postTweet={props.postTweet}
+        fetchTweets={props.fetchTweets}
+      />
       <Feed />
     </div>
 

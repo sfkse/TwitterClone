@@ -1,20 +1,49 @@
- {
-     "tweets":[
+{
+  "tweets": [
     {
-        "author": "Sefa",
-        "username": "@sfkse",
-        "content": "Hey, this is my twitter clone folks!",
-        "comment": 350,
-        "retweet": 50,
-        "like": 180
+      "id": 1,
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "Hey, this is my twitter clone folks!",
+      "comment": 350,
+      "retweet": 50,
+      "like": 180
     },
     {
-        "author": "Hansa",
-        "username": "@hnskse",
-        "content": "Hey, this is my wifes tweet",
-        "comment": 350,
-        "retweet": 50,
-        "like": 180
-    }]
-
+      "id": 2,
+      "author": "Hansa",
+      "username": "@hnskse",
+      "content": "Hey, this is my wifes tweet",
+      "comment": 350,
+      "retweet": 50,
+      "like": 180
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "asdasd",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 3
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "merhaba clone!!",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 4
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "hasss",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 5
+    }
+  ]
 }
