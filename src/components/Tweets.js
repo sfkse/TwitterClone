@@ -23,7 +23,7 @@ const Tweets = ({ tweets, logo }) => {
                 </div>
                 <div className="flex justify-around py-2 mt-2">
                     {tweetBoxIcons.map(icons => <Icon Icon={icons.icon} color={icons.hoverColor} bgColor={icons.hoverBackground} />)}
-                    <Attach color="#1D9BF2" className="hover:bg-blue-iconHover rounded-full p-2" />
+                    <span className="hover:bg-blue-iconHover hover:text-blue-dark transition-all rounded-full p-2"><Attach /></span>
                 </div>
 
             </div>
@@ -34,10 +34,11 @@ const Tweets = ({ tweets, logo }) => {
 const Icon = ({ Icon, color, bgColor }) => {
     return (
         <div className="flex">
-            <a href="" className={`hover:${bgColor} rounded-full p-1`}>
-                <Icon color={color} />
+            <a href="" className={`hover:text-${color} text-gray-500 flex items-center gap-1 `}>
+                <span className={`hover:${bgColor} transition-all  rounded-full p-1`} > <Icon /></span>
+                <span className="text-sm">16</span>
             </a>
-            <span className="text-gray-400 text-sm">16</span>
+
         </div>
     )
 }

@@ -3,6 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        '275': '17rem',
+        '100': '80rem',
+        '600': '37.5rem',
+        '350': '22rem'
+      },
+      // spacing: {
+      //   ''
+      // },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -13,6 +22,7 @@ module.exports = {
         },
         green: {
           iconHover: "rgb(222, 241, 235)",
+          // dark: "#00BA7C"
         },
         red: {
           iconHover: "rgb(247, 224, 235)",

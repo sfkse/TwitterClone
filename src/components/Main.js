@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { TopTweetIcon, PrivacyIcon, tweetEmoji } from '../assets/icon';
 import Tweets from './Tweets';
 import Logo from '../assets/profile-logo.jfif'
@@ -7,7 +8,6 @@ import Logo from '../assets/profile-logo.jfif'
 
 const Main = (props) => {
     const tweetContent = useRef();
-    const [tweetValue, setTweetValue] = useState();
     console.log(props.tweets)
     const handleTweet = (e) => {
         e.preventDefault();
@@ -17,10 +17,10 @@ const Main = (props) => {
         // setTweetValue("")
     }
     return (
-        <div className="w-6/12 border-l-2 border-gray-50">
-            <div className="flex justify-between  m-4">
+        <div className="w-600 border-l-2 border-gray-50">
+            <div className="flex justify-between items-center sticky top-0 bg-white p-4">
                 <h1 className="text-xl font-bold">Home</h1>
-                <TopTweetIcon className="" />
+                <TopTweetIcon />
             </div>
             <div className="flex border-b-2 border-gray-50 border-t-2 p-3">
                 <div className="flex rounded-full">

@@ -23,7 +23,7 @@ const App = (props) => {
 
   return (
 
-    <div className="flex container max-w-6xl mx-auto ">
+    <div className="flex justify-center w-100 gap-4 mx-auto ">
       <Menu />
       <Main
         tweets={props.tweets}

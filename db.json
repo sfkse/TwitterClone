@@ -30,7 +30,7 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "merhaba clone!!",
+      "content": "whassup",
       "comment": 5,
       "retweet": 3,
       "like": 18,
@@ -39,11 +39,47 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "hasss",
+      "content": "asdasd",
       "comment": 5,
       "retweet": 3,
       "like": 18,
       "id": 5
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "asdssssssssss",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 6
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "aaaaaaaaaaaaaaaa",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 7
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "newww",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 8
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "assassa",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 9
     }
   ]
 }
