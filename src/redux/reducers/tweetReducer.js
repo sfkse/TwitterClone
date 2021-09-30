@@ -1,11 +1,11 @@
 import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET } from '../types/types';
 
-const initialState = {
+const initialTweets = {
     errmess: null,
     tweets: []
 }
 // console.log(Tweets)
-export const tweetReducer = (state = initialState, action) => {
+export const tweetReducer = (state = initialTweets, action) => {
     switch (action.type) {
         case LIST_TWEET:
 

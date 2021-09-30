@@ -1,5 +1,6 @@
-import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET } from '../types/types';
+import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET, LIST_FEED } from '../types/types';
 
+// const baseUrl = 'https://my-json-server.typicode.com/sfkse/twitterdb/';
 const baseUrl = 'http://localhost:3001/';
 
 export const fetchTweets = () => async (dispatch) => {
@@ -54,5 +55,18 @@ export const likeTWeet = () => {
 export const reTWeet = () => {
     return ({
         type: RE_TWEET
+    })
+}
+
+export const fetchFeed = () => async (dispatch) => {
+    return await fetch(baseUrl + 'feeds')
+        .then(res => res.json())
+        .then(data => dispatch(listFeed(data)))
+}
+
+export const listFeed = (feeds) => {
+    return ({
+        type: LIST_FEED,
+        payload: feeds
     })
 }

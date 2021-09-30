@@ -4,21 +4,24 @@ import Feed from './components/Feed';
 import Main from './components/Main';
 import Menu from './components/Menu';
 import { connect } from 'react-redux';
-import { fetchTweets, postTweet } from './redux/actions/actions';
+import { fetchTweets, postTweet, fetchFeed } from './redux/actions/actions';
 
 const mapStateToProps = (state) => ({
-  tweets: state.tweet
+  tweets: state.tweet,
+  feeds: state.feeds
 })
 
 const mapDispatchToProps = (dispatch) => ({
   fetchTweets: () => dispatch(fetchTweets()),
-  postTweet: (content) => dispatch(postTweet(content))
+  postTweet: (content) => dispatch(postTweet(content)),
+  fetchFeed: () => dispatch(fetchFeed())
 })
 
 const App = (props) => {
 
   useEffect(() => {
-    props.fetchTweets()
+    props.fetchTweets();
+    props.fetchFeed();
   }, [])
 
   return (
@@ -30,7 +33,9 @@ const App = (props) => {
         postTweet={props.postTweet}
         fetchTweets={props.fetchTweets}
       />
-      <Feed />
+      <Feed
+        feeds={props.feeds}
+      />
     </div>
 
   );

@@ -39,7 +39,7 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "asdasd",
+      "content": "seff",
       "comment": 5,
       "retweet": 3,
       "like": 18,
@@ -48,7 +48,7 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "asdssssssssss",
+      "content": "sefaa",
       "comment": 5,
       "retweet": 3,
       "like": 18,
@@ -57,7 +57,7 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "aaaaaaaaaaaaaaaa",
+      "content": "asd",
       "comment": 5,
       "retweet": 3,
       "like": 18,
@@ -66,7 +66,7 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "newww",
+      "content": "asd",
       "comment": 5,
       "retweet": 3,
       "like": 18,
@@ -75,11 +75,57 @@
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "assassa",
+      "content": "asd",
       "comment": 5,
       "retweet": 3,
       "like": 18,
       "id": 9
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "asd",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 10
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "sssssssssssss",
+      "comment": 5,
+      "retweet": 3,
+      "like": 18,
+      "id": 11
+    }
+  ],
+  "feeds": [
+    {
+      "id": 1,
+      "location": "Sweden",
+      "headline": "Goteborg",
+      "count": "25.5K"
+    },
+    {
+      "id": 2,
+      "location": "Sweden",
+      "headline": "Berg",
+      "count": "3,371"
+    },
+    {
+      "id": 3,
+      "location": "Sweden",
+      "headline": "Lagom",
+      "count": "3,371"
+    }
+  ],
+  "follow": [
+    {
+      "id": 1,
+      "logo": "https://pbs.twimg.com/profile_images/1208039973708009472/Z5xwQ_W1_normal.jpg",
+      "name": "Clarusway",
+      "username": "@clarusway"
     }
   ]
 }

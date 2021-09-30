@@ -35,7 +35,7 @@ const Icon = ({ Icon, color, bgColor }) => {
     return (
         <div className="flex">
             <a href="" className={`hover:text-${color} text-gray-500 flex items-center gap-1 `}>
-                <span className={`hover:${bgColor} transition-all  rounded-full p-1`} > <Icon /></span>
+                <span className={`hover:${bgColor} transition-all  rounded-full p-2`} > <Icon /></span>
                 <span className="text-sm">16</span>
             </a>
 

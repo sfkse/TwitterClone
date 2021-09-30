@@ -1,10 +1,12 @@
 import { tweetReducer } from "./reducers/tweetReducer";
+import { feedReducer } from "./reducers/feedReducer"
 import { createStore, combineReducers } from "redux";
 import { applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 const ConfigureStore = combineReducers({
-    tweet: tweetReducer
+    tweet: tweetReducer,
+    feeds: feedReducer
 })
 
 

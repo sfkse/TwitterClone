@@ -8,11 +8,9 @@ import Logo from '../assets/profile-logo.jfif'
 
 const Main = (props) => {
     const tweetContent = useRef();
-    console.log(props.tweets)
     const handleTweet = (e) => {
         e.preventDefault();
         props.postTweet(tweetContent.current.value)
-        props.fetchTweets()
         tweetContent.current.value = ""
         // setTweetValue("")
     }
@@ -66,7 +64,7 @@ const TweetIcon = ({ Icon, name }) => {
     // console.log(Icon)
     return (
         <a href="#">
-            <li key={name} className="hover:bg-gray-hover mt-5 p-2 rounded-full w-max" >
+            <li key={name} className="hover:bg-gray-hover transition-all mt-5 p-2 rounded-full w-max" >
                 <Icon color="#1D9BF2" />
             </li>
         </a>
