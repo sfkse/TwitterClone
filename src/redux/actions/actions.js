@@ -1,7 +1,7 @@
 import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET, LIST_FEED, LIST_FOLLOW } from '../types/types';
 
-// const baseUrl = 'https://my-json-server.typicode.com/sfkse/twitterdb/';
-const baseUrl = 'http://localhost:3001/';
+const baseUrl = 'https://my-json-server.typicode.com/sfkse/twitterdb/';
+// const baseUrl = 'http://localhost:3001/';
 
 export const fetchTweets = () => async (dispatch) => {
     return await fetch(baseUrl + 'tweets')
