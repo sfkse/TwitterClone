@@ -1,4 +1,4 @@
-import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET, LIST_FEED } from '../types/types';
+import { LIST_TWEET, ADD_TWEET, LIKE_TWEET, RE_TWEET, LIST_FEED, LIST_FOLLOW } from '../types/types';
 
 // const baseUrl = 'https://my-json-server.typicode.com/sfkse/twitterdb/';
 const baseUrl = 'http://localhost:3001/';
@@ -39,6 +39,7 @@ export const postTweet = (content) => async (dispatch) => {
     })
         .then(res => res.json())
         .then(res => dispatch(addTweet(res)))
+        .catch(err => alert(err))
 }
 
 export const addTweet = (tweet) => {
@@ -62,6 +63,7 @@ export const fetchFeed = () => async (dispatch) => {
     return await fetch(baseUrl + 'feeds')
         .then(res => res.json())
         .then(data => dispatch(listFeed(data)))
+        .catch(err => alert(err))
 }
 
 export const listFeed = (feeds) => {
@@ -69,4 +71,18 @@ export const listFeed = (feeds) => {
         type: LIST_FEED,
         payload: feeds
     })
+}
+
+export const fetchFollow = () => async (dispatch) => {
+    return await fetch(baseUrl + 'follow')
+        .then(res => res.json())
+        .then(data => dispatch(listFollow(data)))
+        .catch(err => alert(err))
+}
+
+export const listFollow = (data) => {
+    return {
+        type: LIST_FOLLOW,
+        payload: data
+    }
 }

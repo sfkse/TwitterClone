@@ -2,6 +2,7 @@ import React from 'react';
 import { FeedDots, SettingsIcon } from '../assets/icon';
 
 const Trends = ({ feeds }) => {
+    // console.log(feeds)
     return (
         <div className="flex-col bg-gray-100 rounded-xl">
             <div className="flex justify-between items-center p-4">
