@@ -9,9 +9,9 @@ module.exports = {
         '600': '37.5rem',
         '350': '22rem'
       },
-      // spacing: {
-      //   ''
-      // },
+      lineHeight: {
+        'extra-loose': '3'
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",

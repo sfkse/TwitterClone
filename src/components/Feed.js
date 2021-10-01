@@ -7,7 +7,7 @@ import Trends from './Trends'
 const Feed = ({ feeds, follow }) => {
 
     return (
-        <div className="flex flex-col gap-3 w-350 mt-1">
+        <div className="hidden md:flex flex-col gap-3 w-350 mt-1">
             <Search />
             <Trends feeds={feeds} />
             <Follow follow={follow} />

@@ -6,16 +6,17 @@ import Tweets from './Tweets';
 import Logo from '../assets/profile-logo.jfif'
 
 
-const Main = (props) => {
+const Main = ({ tweets, postTweet, addInteraction }) => {
     const tweetContent = useRef();
+    console.log(tweets)
     const handleTweet = (e) => {
         e.preventDefault();
-        props.postTweet(tweetContent.current.value)
+        postTweet(tweetContent.current.value)
         tweetContent.current.value = ""
         // setTweetValue("")
     }
     return (
-        <div className="w-600 border-l-2 border-gray-50">
+        <div className="md:w-600 border-l-2 border-gray-50">
             <div className="flex justify-between items-center sticky top-0 bg-white p-4">
                 <h1 className="text-xl font-bold">Home</h1>
                 <TopTweetIcon />
@@ -45,7 +46,7 @@ const Main = (props) => {
                                 )}
                             </ul>
                             <button className="text-white bg-blue-light hover:bg-blue-dark font-sm px-5 rounded-full" >
-                                <span > Tweet</span>
+                                <span> Tweet</span>
                             </button>
 
                         </div>
@@ -53,7 +54,7 @@ const Main = (props) => {
                 </div>
             </div>
             <div >
-                {props.tweets.tweets.map(tw => <Tweets tweets={tw} logo={Logo} />)}
+                {tweets?.tweets.map(tw => <Tweets addInteraction={addInteraction} tweets={tw} logo={Logo} />)}
 
             </div>
         </div>

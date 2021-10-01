@@ -1,103 +1,49 @@
 {
   "tweets": [
     {
-      "id": 1,
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "Hey, this is my twitter clone folks!",
-      "comment": 350,
-      "retweet": 50,
-      "like": 180
-    },
-    {
-      "id": 2,
-      "author": "Hansa",
-      "username": "@hnskse",
-      "content": "Hey, this is my wifes tweet",
-      "comment": 350,
-      "retweet": 50,
-      "like": 180
+      "content": "asd",
+      "comment": 0,
+      "retweet": 6,
+      "like": 0,
+      "id": 1
     },
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "asdasd",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
+      "content": "asd",
+      "comment": 0,
+      "retweet": 0,
+      "like": 0,
+      "id": 2
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "asd",
+      "comment": 0,
+      "retweet": 0,
+      "like": 0,
       "id": 3
     },
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "whassup",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
+      "content": "asd",
+      "comment": 0,
+      "retweet": 0,
+      "like": 0,
       "id": 4
     },
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "seff",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
+      "content": "asd",
+      "comment": 0,
+      "retweet": 0,
+      "like": 0,
       "id": 5
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "sefaa",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
-      "id": 6
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "asd",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
-      "id": 7
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "asd",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
-      "id": 8
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "asd",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
-      "id": 9
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "asd",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
-      "id": 10
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "sssssssssssss",
-      "comment": 5,
-      "retweet": 3,
-      "like": 18,
-      "id": 11
     }
   ],
   "feeds": [
