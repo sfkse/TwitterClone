@@ -7,11 +7,13 @@ const Tweets = ({ tweets, logo, addInteraction }) => {
 
     const handleInteraction = (e, tweets, color) => {
         e.preventDefault()
-        // console.log(tweets)
         let type;
         if (color === 'green-500') {
             type = "retweet"
-            console.log(tweets)
+            addInteraction(tweets, type, tweets.id)
+        }
+        else if (color === 'red-500') {
+            type = "like"
             addInteraction(tweets, type, tweets.id)
         }
     }

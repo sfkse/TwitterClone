@@ -36,7 +36,6 @@ const App = (props) => {
         tweets={props.tweets}
         addInteraction={props.addInteraction}
         postTweet={props.postTweet}
-        fetchTweets={props.fetchTweets}
       />
       <Feed
         feeds={props.feeds}

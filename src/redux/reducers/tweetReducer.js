@@ -1,7 +1,6 @@
-import { LIST_TWEET, ADD_TWEET, ADD_COMMENT, ADD_RETWEET, ADD_LIKE } from '../types/types';
+import { LIST_TWEET, ADD_TWEET, ADD_COMMENT } from '../types/types';
 
 const initialTweets = {
-    errmess: null,
     tweets: []
 }
 // console.log(Tweets)
@@ -14,12 +13,6 @@ export const tweetReducer = (state = initialTweets, action) => {
             return { ...state, tweets: state.tweets.concat(action.payload) };
 
         case ADD_COMMENT:
-            return { ...state, tweets: action.payload };
-
-        case ADD_RETWEET:
-            return { ...state, tweets: action.payload };
-
-        case ADD_LIKE:
             return { ...state, tweets: action.payload };
 
 

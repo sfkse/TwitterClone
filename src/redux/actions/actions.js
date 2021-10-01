@@ -1,4 +1,4 @@
-import { LIST_TWEET, ADD_TWEET, LIST_FEED, LIST_FOLLOW, ADD_INTERACTIONS, ADD_COMMENT, ADD_RETWEET } from '../types/types';
+import { LIST_TWEET, ADD_TWEET, LIST_FEED, LIST_FOLLOW } from '../types/types';
 
 // const baseUrl = 'https://my-json-server.typicode.com/sfkse/twitterdb/';
 const baseUrl = 'http://localhost:3001/';
@@ -52,28 +52,27 @@ export const addTweet = (tweet) => {
 }
 export const addInteraction = (tweets, type, id) => async (dispatch) => {
 
+    if (type === "retweet")
+        dispatch(chooseInteraction(tweets, "retweet", id))
+
+    else if (type === "like")
+        dispatch(chooseInteraction(tweets, "like", id))
+
+}
+
+const chooseInteraction = (tweets, type, id) => async (dispatch) => {
+
     return await fetch(baseUrl + `tweets/${id}`, {
         method: 'PUT',
-        body: JSON.stringify({ ...tweets, retweet: tweets.retweet + 1 }),
+        body: JSON.stringify({ ...tweets, [type]: tweets[type] + 1 }),
         headers: {
             'Content-Type': 'application/json'
         }
     })
         .then(res => res.json())
-        .then(res => dispatch(listTweet(res)))
-    // .then(interact => dispatch(addRetweet(interact)))
-
-
+        .then(() => dispatch(fetchTweets()))
 }
 
-export const addRetweet = (tweets) => {
-    console.log(tweets)
-
-    return {
-        type: ADD_RETWEET,
-        payload: tweets
-    }
-}
 // FEED SECTION
 export const fetchFeed = () => async (dispatch) => {
     return await fetch(baseUrl + 'feeds')

@@ -8,7 +8,6 @@ import Logo from '../assets/profile-logo.jfif'
 
 const Main = ({ tweets, postTweet, addInteraction }) => {
     const tweetContent = useRef();
-    console.log(tweets)
     const handleTweet = (e) => {
         e.preventDefault();
         postTweet(tweetContent.current.value)
@@ -54,8 +53,12 @@ const Main = ({ tweets, postTweet, addInteraction }) => {
                 </div>
             </div>
             <div >
-                {tweets?.tweets.map(tw => <Tweets addInteraction={addInteraction} tweets={tw} logo={Logo} />)}
-
+                {tweets.tweets.map(tw =>
+                    <Tweets
+                        addInteraction={addInteraction}
+                        tweets={tw}
+                        logo={Logo}
+                    />)}
             </div>
         </div>
     )
