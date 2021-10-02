@@ -5,8 +5,10 @@
       "username": "@sfkse",
       "content": "asd",
       "comment": 0,
-      "retweet": 19,
-      "like": 4,
+      "retweet": 24,
+      "like": 9,
+      "retweeted": false,
+      "liked": true,
       "id": 1
     },
     {
@@ -16,6 +18,8 @@
       "comment": 0,
       "retweet": 11,
       "like": 3,
+      "retweeted": false,
+      "liked": false,
       "id": 2
     },
     {
@@ -23,45 +27,33 @@
       "username": "@sfkse",
       "content": "asd",
       "comment": 0,
-      "retweet": 8,
-      "like": 5,
+      "retweet": 11,
+      "like": 8,
+      "retweeted": false,
+      "liked": false,
       "id": 3
     },
     {
       "author": "Sefa",
       "username": "@sfkse",
-      "content": "asd",
-      "comment": 0,
-      "retweet": 2,
-      "like": 0,
-      "id": 4
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "asd",
+      "content": "heyy",
       "comment": 0,
       "retweet": 0,
+      "retweeted": false,
+      "like": 0,
+      "id": 4,
+      "liked": false
+    },
+    {
+      "author": "Sefa",
+      "username": "@sfkse",
+      "content": "whassupp",
+      "comment": 0,
+      "retweet": 0,
+      "retweeted": false,
+      "liked": false,
       "like": 0,
       "id": 5
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "geee",
-      "comment": 0,
-      "retweet": 1,
-      "like": 1,
-      "id": 6
-    },
-    {
-      "author": "Sefa",
-      "username": "@sfkse",
-      "content": "assda",
-      "comment": 0,
-      "retweet": 1,
-      "like": 3,
-      "id": 7
     }
   ],
   "feeds": [

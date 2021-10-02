@@ -28,6 +28,8 @@ export const postTweet = (content) => async (dispatch) => {
         content: content,
         comment: 0,
         retweet: 0,
+        retweeted: false,
+        liked: false,
         like: 0
 
     }
@@ -53,18 +55,25 @@ export const addTweet = (tweet) => {
 export const addInteraction = (tweets, type, id) => async (dispatch) => {
 
     if (type === "retweet")
-        dispatch(chooseInteraction(tweets, "retweet", id))
+        dispatch(chooseInteraction(tweets, "retweet", "retweeted", id))
 
     else if (type === "like")
-        dispatch(chooseInteraction(tweets, "like", id))
+        dispatch(chooseInteraction(tweets, "like", "liked", id))
 
 }
 
-const chooseInteraction = (tweets, type, id) => async (dispatch) => {
+const chooseInteraction = (tweets, type, interact, id) => async (dispatch) => {
 
     return await fetch(baseUrl + `tweets/${id}`, {
         method: 'PUT',
-        body: JSON.stringify({ ...tweets, [type]: tweets[type] + 1 }),
+        body: JSON.stringify({
+            ...tweets,
+            [interact]: !tweets[interact],
+            [type]: tweets[interact] === false && tweets[type] >= 0 ? tweets[type] + 1
+                : tweets[interact] === true && tweets[type] > 0 ? tweets[type] - 1
+                    : tweets[type]
+
+        }),
         headers: {
             'Content-Type': 'application/json'
         }

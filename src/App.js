@@ -30,7 +30,7 @@ const App = (props) => {
 
   return (
 
-    <div className="flex flex-wrap justify-center lg:w-100 gap-4 mx-auto">
+    <div className="flex  justify-center lg:w-100 gap-4 mx-auto">
       <Menu />
       <Main
         tweets={props.tweets}

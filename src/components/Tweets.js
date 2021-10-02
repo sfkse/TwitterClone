@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react';
 import { tweetBoxIcons, Attach } from '../assets/icon';
 
 const Tweets = ({ tweets, logo, addInteraction }) => {
